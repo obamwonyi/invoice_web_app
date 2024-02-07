@@ -56,6 +56,8 @@ INSTALLED_APPS = [
 
     # local apps
     'invoice_web_app.apps.InvoiceWebAppConfig',
+    'client.apps.ClientConfig',
+    'teams.apps.TeamsConfig',
 
     # dependencies apps
     'rest_framework', 
@@ -64,6 +66,9 @@ INSTALLED_APPS = [
     # Djoser is used for user authentication process
     # provides us with pre built urls for authentication
     'djoser',
+    # django extensions holds the command to list the urls
+    'django_extensions',
+    
 ]
 
 MIDDLEWARE = [
