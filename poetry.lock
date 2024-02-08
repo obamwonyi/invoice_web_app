@@ -306,6 +306,20 @@ files = [
 Django = ">=3.2"
 
 [[package]]
+name = "django-pdfkit"
+version = "0.3.1"
+description = "Django view that converts HTML to PDF using webkit."
+optional = false
+python-versions = "*"
+files = [
+    {file = "django-pdfkit-0.3.1.tar.gz", hash = "sha256:028428e41d5f734b5f390aa1791b729a12f60ee61409b9f37cf2153737520303"},
+    {file = "django_pdfkit-0.3.1-py2.py3-none-any.whl", hash = "sha256:f1c08f705f26d46f6d7df5c730946c28306b6dc5178c8fca527a413429155673"},
+]
+
+[package.dependencies]
+pdfkit = ">=0.5.0,<=0.6.0"
+
+[[package]]
 name = "django-templated-mail"
 version = "1.1.1"
 description = "Send emails using Django template system."
@@ -402,6 +416,17 @@ files = [
 rsa = ["cryptography (>=3.0.0)"]
 signals = ["blinker (>=1.4.0)"]
 signedtoken = ["cryptography (>=3.0.0)", "pyjwt (>=2.0.0,<3)"]
+
+[[package]]
+name = "pdfkit"
+version = "0.6.0"
+description = "Wkhtmltopdf python wrapper to convert html to pdf using the webkit rendering engine and qt"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pdfkit-0.6.0-py2-none-any.whl", hash = "sha256:1758ba0bce6bdb2ff3179e5f09fe34501381480698af96f8dc34e6acf52d5041"},
+    {file = "pdfkit-0.6.0.tar.gz", hash = "sha256:f63469ae1aaef60a642e8ba9fcdae6feac4fc50189975cf2f4d4c1ec3112c982"},
+]
 
 [[package]]
 name = "psycopg2-binary"
@@ -679,4 +704,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "fc5ea3e7af47602ba979e817df6744a4734c9bdf9f36a57f2192e85f83ef0c3d"
+content-hash = "1db1412889355450f24fb65503efa5ea2120a5719d9dcd881946c95fc7158f3d"

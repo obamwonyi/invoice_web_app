@@ -58,10 +58,12 @@ INSTALLED_APPS = [
     'invoice_web_app.apps.InvoiceWebAppConfig',
     'client.apps.ClientConfig',
     'teams.apps.TeamsConfig',
+    'invoice.apps.InvoiceConfig',
 
     # dependencies apps
     'rest_framework', 
     'rest_framework.authtoken',
+    # for setting added urls
     'corsheaders',
     # Djoser is used for user authentication process
     # provides us with pre built urls for authentication
